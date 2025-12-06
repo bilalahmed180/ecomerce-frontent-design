@@ -1,5 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --button: rgb(40, 102, 218);
+    --background: rgb(222, 222, 222);
+}
+
+html {
+    font-size: 16px;
+}
+
+/* HEADER SECTION */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header .nav-center {
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+}
+
+.header .nav-center input {
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.nav-center .dropdown {
+    border-left: 1px solid black;
+}
+
+.nav-center .search {
+    border-radius: 0 8px 8px 0px;
+    border: none;
+    background-color: var(--button);
+    padding: 7px 20px;
+}
+
+.nav-center .search a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .icons p {
+    font-size: 0.8rem;
+}
+
+nav .flag-icon {
+    width: 22px;
+    height: 15px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+/* HERO SECTION */
+
+.background-color{
+    background-color: var(--background);
 }

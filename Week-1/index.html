@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ecomerce-web</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
-    
+
+    <!-- HEADER SECTION START -->
+
+    <header>
+        <div class="container header py-1">
+            <div class="logo">
+                <img src="./images/logo-symbol.png" alt="">
+                <h2>Brand</h2>
+            </div>
+            <div class="nav-center">
+                <input type="text" placeholder="Search">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        All category
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+                <button class="search"><a href="">Search</a></button>
+            </div>
+            <div class="icons d-flex align-item-center text-center gap-3">
+                <div><a class="text-decoration-none text-secondary" href="">
+                        <i class="ri-user-3-fill"></i>
+                        <p>Profile</p>
+                    </a>
+                </div>
+                <div><a class="text-decoration-none text-secondary" href="">
+                        <i class="ri-message-fill"></i>
+                        <p>Message</p>
+                    </a>
+                </div>
+                <div><a class="text-decoration-none text-secondary" href="">
+                        <i class="ri-heart-fill"></i>
+                        <p>Orders</p>
+                    </a>
+                </div>
+                <div><a class="text-decoration-none text-secondary" href="">
+                        <i class="ri-shopping-cart-2-fill"></i>
+                        <p>My cart</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-bottom">
+            <nav class="container d-flex justify-content-between align-item-center pt-2">
+                <div class="d-flex align-item-center">
+                    <div>
+                        <a class="text-decoration-none text-dark" href="">
+                            <button class="border-0 bg-white"><i class="ri-menu-line"></i></button>
+                            <button class="border-0 bg-white me-3">All category</button>
+                        </a>
+                    </div>
+                    <ul class="d-flex list-unstyled align-item-center gap-4">
+                        <li><a class="text-decoration-none text-dark" href="">Hot offers</a></li>
+                        <li><a class="text-decoration-none text-dark" href="">Gift boxes</a></li>
+                        <li><a class="text-decoration-none text-dark" href="">Projects</a></li>
+                        <li><a class="text-decoration-none text-dark" href="">Menu item</a></li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-dark text-decoration-none" data-bs-toggle="dropdown">
+                                Help
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Customer Support</a></li>
+                                <li><a class="dropdown-item" href="#">Track Order</a></li>
+                                <li><a class="dropdown-item" href="#">Returns & Refunds</a></li>
+                                <li><a class="dropdown-item" href="#">Payment Methods</a></li>
+                                <li><a class="dropdown-item" href="#">Shipping Information</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Live Chat Support</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">Report an Issue</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <div class="d-flex gap-4">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-dark text-decoration-none" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            English, USD
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English, USD</a></li>
+                            <li><a class="dropdown-item" href="#">English, EUR</a></li>
+                            <li><a class="dropdown-item" href="#">German, USD</a></li>
+                            <li><a class="dropdown-item" href="#">French, EUR</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-dark text-decoration-none" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <img src="https://flagcdn.com/w20/de.png" class="flag-icon"> Ship to
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="https://flagcdn.com/w20/us.png" class="flag-icon"> USA
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="https://flagcdn.com/w20/ca.png" class="flag-icon"> Canada
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="https://flagcdn.com/w20/gb.png" class="flag-icon"> UK
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="https://flagcdn.com/w20/de.png" class="flag-icon"> Germany
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HEADER SECTION END -->
+
+    <main>
+
+        <!-- SECTION 1 START -->
+
+        <section class="background-color">
+            <div class="container shadow bg-white">
+                <ul>
+                    <li><a href="">Automobiles</a></li>
+                    <li><a href="">Clothes and wear</a></li>
+                    <li><a href="">Home interiors</a></li>
+                    <li><a href="">Computer and tech</a></li>
+                    <li><a href="">Tools, equipments</a></li>
+                    <li><a href="">Sports and outdoor</a></li>
+                    <li><a href="">Animal and pets</a></li>
+                    <li><a href="">Machinery tools</a></li>
+                    <li><a href="">More category</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 1 END -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
