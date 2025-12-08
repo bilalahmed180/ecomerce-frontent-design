@@ -7,11 +7,24 @@
 
 :root {
     --button: rgb(40, 102, 218);
-    --background: rgb(222, 222, 222);
+    --background: rgb(241, 241, 241);
+    --color: #000;
 }
 
 html {
     font-size: 16px;
+}
+
+.black-color {
+    color: var(--color);
+}
+
+.skyblue {
+    background-color: rgb(205, 235, 247);
+}
+
+.border-radius-10{
+    border-radius: 10px
 }
 
 /* HEADER SECTION */
@@ -28,7 +41,7 @@ header .logo {
 }
 
 .header .nav-center {
-    border: 2px solid blue;
+    border: 2px solid rgb(35, 105, 255);
     border-radius: 10px;
     display: flex;
 }
@@ -68,6 +81,126 @@ nav .flag-icon {
 
 /* HERO SECTION */
 
-.background-color{
+.background-color {
     background-color: var(--background);
+}
+
+.section-1 .hero-img {
+    background-image: url(./assets/images/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 65vh;
+}
+
+.section-1 ul li:hover {
+    background-color: rgb(205, 235, 247);
+}
+
+/* SECTION 2 */
+
+.offer-box {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.placeholder-img {
+    width: 90px;
+    height: 90px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.discount-badge {
+    background: #ffe6e6;
+    color: red;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.timer-box {
+    background: #444;
+    color: #fff;
+    width: 55px;
+    padding: 8px 0;
+    border-radius: 6px;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.bg-orange{
+    background-color: rgb(255, 99, 43);
+}
+
+.bg-skyblue{
+    background-color: rgb(63, 160, 198);
+}
+
+/* SECTION-3 & 4 */
+
+.bg-img{
+    background-image: url(./assets/images/bg-img.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.bg-img-2{
+    background-image: url(./assets/images/bg-img-2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.category-box {
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+.item-box {
+    border: 1px solid #eee;
+    text-align: left;
+    padding: 20px 15px;
+}
+
+.placeholder-square {
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    float: right;
+}
+
+.item-title {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.item-sub {
+    font-size: 12px;
+    color: #9c9c9c;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-1 .hero-img{
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+    .section-1 .hero-img{
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2700px) {
+    .section-1 .hero-img{
+        /* height: 18vh; */
+    }
 }
