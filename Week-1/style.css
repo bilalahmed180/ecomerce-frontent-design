@@ -23,7 +23,7 @@ html {
     background-color: rgb(205, 235, 247);
 }
 
-.border-radius-10{
+.border-radius-10 {
     border-radius: 10px
 }
 
@@ -91,7 +91,7 @@ nav .flag-icon {
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
-    height: 65vh;
+    height: 370px;
 }
 
 .section-1 ul li:hover {
@@ -134,25 +134,25 @@ nav .flag-icon {
     text-align: center;
 }
 
-.bg-orange{
+.bg-orange {
     background-color: rgb(255, 99, 43);
 }
 
-.bg-skyblue{
+.bg-skyblue {
     background-color: rgb(63, 160, 198);
 }
 
 /* SECTION-3 & 4 */
 
-.bg-img{
-    background-image: url(./assets/images/bg-img.png);
+.bg-img {
+    background-image: url(./assets/images/product-images/bg-img.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px 0px 0px 10px;
 }
 
-.bg-img-2{
-    background-image: url(./assets/images/bg-img-2.png);
+.bg-img-2 {
+    background-image: url(./assets/images/product-images/bg-img-2.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px 0px 0px 10px;
@@ -187,20 +187,41 @@ nav .flag-icon {
     color: #9c9c9c;
 }
 
+/* SECTION 5 */
+
+.hero-box {
+    background-image: url(./assets/images/querry-bg-img.png);
+}
+
+.hero-box {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 390px;
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 350px;
+}
+
+@media screen and (max-width: 900px) {
+    .section-1 .hero-img {
+        height: 600px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
-    .section-1 .hero-img{
-        height: 30vh;
-    }
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1500px) {
-    .section-1 .hero-img{
-        height: 30vh;
-    }
-}
-
-@media screen and (min-width: 1500px) and (max-width: 2700px) {
-    .section-1 .hero-img{
-        /* height: 18vh; */
+    .section-1 .hero-img {
+        height: 400px;
     }
 }
