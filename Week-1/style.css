@@ -7,7 +7,7 @@
 
 :root {
     --button: rgb(40, 102, 218);
-    --background: rgb(241, 241, 241);
+    --background: rgb(247, 247, 247);
     --color: #000;
 }
 
@@ -213,6 +213,55 @@ nav .flag-icon {
     padding: 25px;
     width: 350px;
 }
+
+/* SECTION-7 */
+
+.service-card {
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.content p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icon-box {
+    position: absolute;
+    top: 100px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: #e8f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+.icon-box i {
+    font-size: 20px;
+}
+
+/* SECTION-8 */
+
+.flag-box {
+    width: 28px;
+    height: 20px;
+    background: #e5e7eb;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.country-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 
 @media screen and (max-width: 900px) {
     .section-1 .hero-img {
