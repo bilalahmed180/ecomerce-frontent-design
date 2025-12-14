@@ -248,19 +248,137 @@ nav .flag-icon {
 
 /* SECTION-8 */
 
-.flag-box {
-    width: 28px;
-    height: 20px;
-    background: #e5e7eb;
-    border-radius: 3px;
-    flex-shrink: 0;
-}
-
 .country-name {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
 }
+
+/* SECTION-9 */
+
+.sec-9-bg {
+    background-color: rgb(230, 230, 230);
+}
+
+/* FOOTER */
+
+.footer {
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    background: #e8f0ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+    font-size: 18px;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+.footer-text {
+    max-width: 240px;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #6b7280;
+}
+
+.footer-links a:hover {
+    color: #3b82f6;
+}
+
+.social-icons a {
+    width: 32px;
+    height: 32px;
+    background: #a7acb7;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 6px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 90px;
+}
+
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.app-btn {
+    background: #111827;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.language-btn {
+    background: transparent;
+    border: none;
+    color: #6b7280;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+}
+
+.language-btn:focus {
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+    border-radius: 8px;
+}
+
 
 
 @media screen and (max-width: 900px) {
