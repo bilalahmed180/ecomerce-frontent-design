@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container-fluid bg-light py-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- ===== SIDEBAR ===== -->
+                <aside class="col-lg-3 d-none d-lg-block">
+                    <div class="filter-box">
+
+                        <!-- CATEGORY -->
+                        <div class="filter-group">
+                            <div class="d-flex justify-content-between align-items-center filter-header"
+                                data-bs-toggle="collapse" data-bs-target="#catFilter">
+                                <h6 class="filter-title">Category</h6>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+
+                            <div class="collapse show" id="catFilter">
+                                <ul class="filter-list">
+                                    <li>Mobile accessory</li>
+                                    <li>Electronics</li>
+                                    <li>Smartphones</li>
+                                    <li>Modern tech</li>
+                                    <li class="text-primary">See all</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- BRANDS -->
+                        <div class="filter-group">
+                            <div class="d-flex justify-content-between align-items-center filter-header"
+                                data-bs-toggle="collapse" data-bs-target="#brandFilter">
+                                <h6 class="filter-title">Brands</h6>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+
+                            <div class="collapse show" id="brandFilter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="b1">
+                                    <label class="form-check-label" for="b1">Samsung</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="b2">
+                                    <label class="form-check-label" for="b2">Apple</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="b3">
+                                    <label class="form-check-label" for="b3">Huawei</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="b4">
+                                    <label class="form-check-label" for="b4">Poco</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="b5">
+                                    <label class="form-check-label" for="b5">Lenovo</label>
+                                </div>
+                                <div class="text-primary small mt-1">See all</div>
+                            </div>
+                        </div>
+
+                        <!-- FEATURES -->
+                        <div class="filter-group">
+                            <div class="d-flex justify-content-between align-items-center filter-header"
+                                data-bs-toggle="collapse" data-bs-target="#featureFilter">
+                                <h6 class="filter-title">Features</h6>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+
+                            <div class="collapse show" id="featureFilter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="f1">
+                                    <label class="form-check-label" for="f1">Metallic</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="f2">
+                                    <label class="form-check-label" for="f2">Plastic cover</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="f3">
+                                    <label class="form-check-label" for="f3">8GB Ram</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="f4">
+                                    <label class="form-check-label" for="f4">Super power</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="f5">
+                                    <label class="form-check-label" for="f5">Large Memory</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRICE RANGE -->
+                        <div class="filter-group">
+                            <div class="d-flex justify-content-between align-items-center filter-header">
+                                <h6 class="filter-title">Price range</h6>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <input type="number" class="form-control" placeholder="Min">
+                                <input type="number" class="form-control" placeholder="Max">
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm w-100 mt-2">
+                                Apply
+                            </button>
+                        </div>
+
+                        <!-- CONDITION -->
+                        <div class="filter-group">
+                            <div class="d-flex justify-content-between align-items-center filter-header"
+                                data-bs-toggle="collapse" data-bs-target="#conditionFilter">
+                                <h6 class="filter-title">Condition</h6>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+
+                            <div class="collapse show" id="conditionFilter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="condition" checked>
+                                    <label class="form-check-label">Any</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="condition">
+                                    <label class="form-check-label">Refurbished</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="condition">
+                                    <label class="form-check-label">Brand new</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="condition">
+                                    <label class="form-check-label">Old items</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RATINGS -->
+                        <div class="filter-group">
+                            <div class="d-flex justify-content-between align-items-center filter-header">
+                                <h6 class="filter-title">Ratings</h6>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-line text-warning"></i>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-fill text-warning"></i>
+                                    <i class="ri-star-line text-warning"></i>
+                                    <i class="ri-star-line text-warning"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <!-- ===== PRODUCTS ===== -->
+                <div class="col-lg-9">
+
+                    <!-- TOP BAR -->
+                    <div class="top-bar">
+                        <span>12,911 items in <b>Mobile accessory</b></span>
+
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="verifiedOnly" checked>
+                                <label class="form-check-label" for="verifiedOnly">Verified only</label>
+                            </div>
+
+                            <select class="form-select form-select-sm w-auto">
+                                <option>Featured</option>
+                                <option>Newest</option>
+                                <option>Price: Low to High</option>
+                            </select>
+
+                            <i class="ri-layout-grid-line fs-5" id="gridView"></i>
+                            <i class="ri-list-check fs-5 text-primary" id="listView"></i>
+
+                            <button class="btn btn-outline-secondary d-lg-none" data-bs-toggle="offcanvas"
+                                data-bs-target="#filterCanvas">
+                                <i class="ri-filter-3-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ===== PRODUCTS WRAPPER ===== -->
+                    <div id="productsWrapper" class="list-view">
+
+                        <!-- PRODUCT 1 -->
+                        <div class="product-card fade-up">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <h6>Canon Camera EOS 2000D</h6>
+                                <div class="price">$998 <span>$1128</span></div>
+                                <div class="rating">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                    <small>7.5 · 154 orders</small>
+                                    <span class="free">Free Shipping</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#">View details</a>
+                            </div>
+                            <div class="wishlist"><i class="ri-heart-line"></i></div>
+                        </div>
+
+                        <!-- PRODUCT 2 -->
+                        <div class="product-card fade-up">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <h6>GoPro HERO6 4K Action Camera</h6>
+                                <div class="price">$899 <span>$1020</span></div>
+                                <div class="rating">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                                    <i class="ri-star-line"></i>
+                                    <small>6.8 · 98 orders</small>
+                                    <span class="free">Free Shipping</span>
+                                </div>
+                                <p>Ut enim ad minim veniam quis nostrud exercitation.</p>
+                                <a href="#">View details</a>
+                            </div>
+                            <div class="wishlist"><i class="ri-heart-line"></i></div>
+                        </div>
+
+                        <!-- PRODUCT 3 -->
+                        <div class="product-card fade-up">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <h6>MacBook Pro 16-inch</h6>
+                                <div class="price">$1999 <span>$2299</span></div>
+                                <div class="rating">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <small>9.1 · 320 orders</small>
+                                    <span class="free">Free Shipping</span>
+                                </div>
+                                <p>High performance laptop for professionals.</p>
+                                <a href="#">View details</a>
+                            </div>
+                            <div class="wishlist"><i class="ri-heart-line"></i></div>
+                        </div>
+
+                        <!-- PRODUCT 4 -->
+                        <div class="product-card fade-up">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <h6>Apple Watch Series 8</h6>
+                                <div class="price">$499 <span>$599</span></div>
+                                <div class="rating">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                    <small>8.3 · 211 orders</small>
+                                    <span class="free">Free Shipping</span>
+                                </div>
+                                <p>Advanced health tracking smartwatch.</p>
+                                <a href="#">View details</a>
+                            </div>
+                            <div class="wishlist"><i class="ri-heart-line"></i></div>
+                        </div>
+
+                        <!-- PRODUCT 5 -->
+                        <div class="product-card fade-up">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <h6>Sony WH-1000XM5 Headphones</h6>
+                                <div class="price">$349 <span>$399</span></div>
+                                <div class="rating">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                    <small>8.7 · 176 orders</small>
+                                    <span class="free">Free Shipping</span>
+                                </div>
+                                <p>Industry leading noise cancellation.</p>
+                                <a href="#">View details</a>
+                            </div>
+                            <div class="wishlist"><i class="ri-heart-line"></i></div>
+                        </div>
+
+                    </div>
+
+                    <nav class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link">‹</a></li>
+                            <li class="page-item active"><a class="page-link">1</a></li>
+                            <li class="page-item"><a class="page-link">2</a></li>
+                            <li class="page-item"><a class="page-link">3</a></li>
+                            <li class="page-item"><a class="page-link">›</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="offcanvas offcanvas-start" id="filterCanvas">
+        <div class="offcanvas-header">
+            <h5>Filters</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="filter-box">
+                <h6 class="filter-title">Category</h6>
+                <ul class="filter-list">
+                    <li>Mobile accessory</li>
+                    <li>Electronics</li>
+                    <li>Smartphones</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

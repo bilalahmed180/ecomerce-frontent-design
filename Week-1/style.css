@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.25s ease-in-out;
 }
 
 :root {
@@ -26,6 +27,34 @@ html {
 .border-radius-10 {
     border-radius: 10px
 }
+
+.card:hover,
+.offer-box:hover,
+.item-box:hover,
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+/* Scroll animation */
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* HEADER SECTION */
 .header {
@@ -87,15 +116,25 @@ nav .flag-icon {
 
 .section-1 .hero-img {
     background-image: url(./assets/images/hero.png);
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 60%;
-    height: 370px;
+    min-height: 370px;
+    height: auto;
 }
+
+@media (min-width: 1400px) {
+    .section-1 .hero-img {
+        background-size: cover;
+        min-height: 420px;
+    }
+}
+
 
 .section-1 ul li:hover {
     background-color: rgb(205, 235, 247);
+    transform: translateX(6px);
 }
 
 /* SECTION 2 */
