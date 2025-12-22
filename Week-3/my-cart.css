@@ -1,0 +1,87 @@
+.cart-item {
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+    transition: .3s;
+}
+
+.cart-item:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
+    transform: translateY(-4px);
+}
+
+.cart-item img {
+    width: 80px;
+}
+
+.item-actions span {
+    font-size: 13px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.remove {
+    color: #dc2626;
+}
+
+.save {
+    color: #2563eb;
+}
+
+.qty {
+    width: 90px;
+    margin-top: 5px;
+}
+
+.summary-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.payment-icons i {
+    font-size: 28px;
+    margin-right: 8px;
+    color: #6b7280;
+}
+
+.info-strip {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.saved-card {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+}
+
+.saved-card:hover {
+    transform: translateY(-6px);
+}
+
+.promo {
+    background: linear-gradient(90deg, #0d6efd, #2563eb);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

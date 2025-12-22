@@ -1,0 +1,74 @@
+.main-img img {
+  transition: transform .4s ease;
+}
+.main-img img:hover {
+  transform: scale(1.05);
+}
+
+.thumb-list img {
+  width: 70px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.thumb-list img:hover {
+  border-color: #0d6efd;
+}
+
+.price-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.price-card.active {
+  background: #fff3cd;
+  border-color: #ffc107;
+}
+
+.supplier-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  background: #e8f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.like-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.related-card {
+  text-align: center;
+  min-width: 140px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+.related-card:hover {
+  transform: translateY(-6px);
+}
+
+.list-check li::before {
+  content: "✔ ";
+  color: green;
+}
+
+.promo {
+  background: linear-gradient(90deg,#0d6efd,#2563eb);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
